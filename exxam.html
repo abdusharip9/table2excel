@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		td,
+		th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h2>HTML Table</h2>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Sana</th>
+				<th>Country</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Matyoqubov Ibrohim</td>
+				<td>2024-10-23 13:19:47</td>
+				<td>Germany</td>
+			</tr>
+			<tr>
+				<td>Matyoqubov Ibrohim</td>
+				<td>2024-10-23 13:19:47</td>
+				<td>Germany</td>
+			</tr>
+			<tr>
+				<td>Matyoqubov Ibrohim</td>
+				<td>2024-10-23 13:19:47</td>
+				<td>Germany</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- <script>
+
+		let tableHeadArr = [],
+			tableBodyArr = []
+		let tableHeads = document.querySelectorAll('table thead tr th')
+		let headIndex = null
+
+
+		tableHeads.forEach((item, idx) => {
+			tableHeadArr[idx] = item.innerHTML
+			if (item.innerHTML === "Sana") {
+				headIndex = idx
+			}
+		})
+
+		let tableBody = document.querySelectorAll(`table tbody td:nth-child(${headIndex + 1})`)
+
+		tableBody.forEach((item, idx) => {
+			tableBodyArr[idx] = item.innerHTML
+		})
+
+		console.log(tableBody)
+		console.log(tableBodyArr)
+
+		tableBody.forEach(item => {
+			item.textContent = item.textContent.replaceAll("-", "/")
+			console.log(item)
+		})
+	</script> -->
+
+</body>
+
+</html>
